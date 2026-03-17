@@ -72,7 +72,7 @@
       resultado.textContent = 'Carregando...';
 
       try {
-        const response = await fetch('https://didactic-succotash-x59jr4p9764qfv95r-25000.app.github.dev/mensagem');
+        const response = await fetch('/mensagem');
         const data = await response.json();
         resultado.textContent = data.mensagem;
       } catch (error) {
